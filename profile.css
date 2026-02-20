@@ -89,6 +89,39 @@ body {
   overflow: hidden;
 }
 
+.hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(240px, 0.75fr);
+  gap: 26px;
+  align-items: stretch;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-portrait {
+  margin: 0;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  overflow: hidden;
+  box-shadow: 0 16px 36px rgba(7, 24, 46, 0.32);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.hero-portrait img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 22%;
+  min-height: 360px;
+}
+
 .hero::after {
   content: "";
   position: absolute;
@@ -211,6 +244,21 @@ li {
   margin-top: 18px;
 }
 
+.profile-shot-card {
+  overflow: hidden;
+}
+
+.profile-shot {
+  display: block;
+  width: calc(100% + 48px);
+  margin: 0 -24px -24px;
+  max-width: none;
+  height: 360px;
+  object-fit: cover;
+  object-position: center 18%;
+  border-top: 1px solid var(--line);
+}
+
 .kpi {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -230,6 +278,39 @@ li {
   color: var(--brand);
 }
 
+.showcase {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.showcase-media {
+  min-height: 320px;
+}
+
+.showcase-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 24%;
+}
+
+.showcase-copy {
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(170deg, #fbfdff, #f2f7ff);
+}
+
+.showcase-copy p {
+  margin: 0;
+}
+
 footer {
   text-align: center;
   font-size: 0.84rem;
@@ -244,6 +325,27 @@ footer {
 
   .hero {
     padding: 26px;
+  }
+
+  .hero-layout {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .hero-portrait img {
+    min-height: 280px;
+  }
+
+  .profile-shot {
+    height: 300px;
+  }
+
+  .showcase {
+    grid-template-columns: 1fr;
+  }
+
+  .showcase-media {
+    min-height: 280px;
   }
 
   .topbar {
