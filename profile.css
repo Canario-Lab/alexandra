@@ -1,0 +1,252 @@
+:root {
+  --bg: #f3f6fb;
+  --card: #ffffff;
+  --ink: #1e2a3a;
+  --muted: #5e6a7b;
+  --line: #dce3ee;
+  --brand: #0b66c3;
+  --brand-soft: #e8f1fb;
+  --accent: #0f4f8a;
+  --shadow: 0 10px 30px rgba(24, 44, 74, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 12% 10%, #ffffff 0%, rgba(255, 255, 255, 0) 45%),
+    linear-gradient(160deg, #eef3fa 0%, #f8fbff 45%, #edf2f9 100%);
+  line-height: 1.55;
+}
+
+.page {
+  max-width: 1060px;
+  margin: 24px auto;
+  padding: 0 16px 40px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 12px;
+}
+
+.lang-nav {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid #d6e1ef;
+  border-radius: 999px;
+  padding: 8px;
+  box-shadow: 0 8px 24px rgba(31, 51, 78, 0.07);
+}
+
+.lang-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 999px;
+  padding: 6px 10px;
+  border: 1px solid transparent;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.lang-item:hover {
+  border-color: #c7d9ef;
+  background: #f5f9ff;
+}
+
+.lang-item.is-active {
+  background: #0b66c3;
+  border-color: #0b66c3;
+  color: #fff;
+}
+
+.lang-flag {
+  width: 18px;
+  height: 13px;
+  display: inline-block;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.hero {
+  background: linear-gradient(135deg, #0d4e89 0%, #0b66c3 65%, #3f86d3 100%);
+  border-radius: 22px;
+  color: #fff;
+  padding: 36px;
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: auto -120px -130px auto;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  letter-spacing: 0.02em;
+}
+
+.hero .headline {
+  margin: 8px 0 0;
+  font-size: clamp(1.05rem, 2.3vw, 1.35rem);
+  font-weight: 600;
+  opacity: 0.96;
+}
+
+.hero .summary {
+  margin: 16px 0 22px;
+  max-width: 760px;
+  font-size: 1rem;
+  opacity: 0.93;
+}
+
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pill {
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  border-radius: 999px;
+  padding: 7px 14px;
+  font-size: 0.95rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(31, 51, 78, 0.07);
+  padding: 24px;
+}
+
+h2 {
+  margin: 0 0 14px;
+  font-size: 1.15rem;
+  color: var(--accent);
+}
+
+.strengths {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  background: var(--brand-soft);
+  color: var(--accent);
+  border: 1px solid #cfe1f5;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.job {
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+}
+
+.job:first-of-type {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.job h3 {
+  margin: 0;
+  font-size: 1.03rem;
+}
+
+.meta {
+  margin: 4px 0 8px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+ul {
+  margin: 8px 0 0;
+  padding-left: 20px;
+}
+
+li {
+  margin: 4px 0;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.side-block {
+  margin-top: 18px;
+}
+
+.kpi {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.kpi-item {
+  background: #f7fafe;
+  border: 1px solid #deebfb;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.kpi-item strong {
+  display: block;
+  font-size: 1.12rem;
+  color: var(--brand);
+}
+
+footer {
+  text-align: center;
+  font-size: 0.84rem;
+  color: var(--muted);
+  margin-top: 16px;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 26px;
+  }
+
+  .topbar {
+    justify-content: center;
+  }
+}
