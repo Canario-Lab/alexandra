@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wizytówka | Aleksandra Andryka</title>
+    <style>
+      :root {
+        --bg: #eef4f0;
+        --line: #cddbd3;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        gap: 18px;
+        padding: 28px 18px;
+        font-family: "Avenir Next", "Segoe UI", Arial, sans-serif;
+        color: #16251f;
+        background:
+          radial-gradient(circle at 12% 10%, #ffffff 0%, rgba(255, 255, 255, 0) 45%),
+          linear-gradient(160deg, #e7efe9 0%, #f4f8f5 45%, #e2ebe5 100%);
+      }
+
+      .frame {
+        border-radius: 18px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.8);
+        padding: 18px;
+        box-shadow: 0 14px 40px rgba(12, 39, 29, 0.14);
+      }
+
+      .card {
+        width: 90mm;
+        height: 50mm;
+        display: block;
+      }
+
+      .hint {
+        max-width: 560px;
+        font-size: 0.95rem;
+        line-height: 1.45;
+        text-align: center;
+        opacity: 0.86;
+      }
+
+      .hint code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 0.95em;
+      }
+
+      @media print {
+        body {
+          padding: 0;
+          background: #fff;
+          gap: 0;
+        }
+
+        .frame {
+          border: none;
+          box-shadow: none;
+          padding: 0;
+          background: transparent;
+          border-radius: 0;
+        }
+
+        .hint {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="frame">
+      <img class="card" src="./wizytowka.svg" alt="Wizytówka - Aleksandra Andryka" />
+    </div>
+    <div class="hint">
+      Druk: ustaw skalę <code>100%</code> (bez „dopasuj do strony”). Rozmiar projektu: <code>90×50 mm</code>.
+    </div>
+  </body>
+</html>

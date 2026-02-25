@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="90mm" height="50mm" viewBox="0 0 90 50">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07261b"/>
+      <stop offset="0.58" stop-color="#114634"/>
+      <stop offset="1" stop-color="#1a5c44"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="goldGlow" cx="0.18" cy="0.2" r="1.0">
+      <stop offset="0" stop-color="#f5e6b8" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#f5e6b8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- background -->
+  <rect x="0" y="0" width="90" height="50" rx="4" fill="url(#bg)"/>
+  <rect x="0" y="0" width="90" height="24" rx="4" fill="url(#shine)" opacity="0.34"/>
+  <rect x="0" y="0" width="90" height="50" rx="4" fill="url(#goldGlow)"/>
+
+  <!-- subtle decorative circles -->
+  <circle cx="78.5" cy="8" r="12.5" fill="none" stroke="#d6bf82" stroke-width="0.45" opacity="0.16"/>
+  <circle cx="83.5" cy="12.5" r="7.4" fill="none" stroke="#d6bf82" stroke-width="0.35" opacity="0.12"/>
+
+  <!-- border -->
+  <rect x="1.2" y="1.2" width="87.6" height="47.6" rx="3.2" fill="none" stroke="#d6bf82" stroke-width="0.32" opacity="0.42"/>
+
+  <!-- text block -->
+  <g>
+    <text x="6" y="16.2" fill="#d6bf82" font-size="5.8" font-weight="500" font-style="italic" letter-spacing="0.28"
+      font-family="Cormorant Garamond, Playfair Display, Georgia, serif">Aleksandra</text>
+    <text x="6" y="23.8" fill="#d6bf82" font-size="7.0" font-weight="600" font-style="italic" letter-spacing="0.22"
+      font-family="Cormorant Garamond, Playfair Display, Georgia, serif">Andryka</text>
+
+    <rect x="6" y="26.85" width="43" height="0.28" rx="0.14" fill="#d6bf82" opacity="0.46"/>
+
+    <!-- website icon (globe) -->
+    <g transform="translate(6,33.10)" stroke="#ffffff" stroke-opacity="0.88" fill="none" stroke-width="0.28" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="1.45" cy="1.45" r="1.18"/>
+      <path d="M0.27 1.45h2.36M1.45 0.27c.55.42.55 2.49 0 2.36M1.45 0.27c-.55.42-.55 2.49 0 2.36"/>
+      <path d="M0.55 0.78c.38.22 1.42.22 1.80 0M0.55 2.12c.38-.22 1.42-.22 1.80 0"/>
+    </g>
+    <text x="10.65" y="35.4" fill="#ffffff" font-size="3.15" font-weight="350" opacity="0.93" letter-spacing="0.02"
+      font-family="Avenir Next, Segoe UI, Arial, sans-serif">aleksandra.andryka.eu</text>
+
+    <!-- mail icon (envelope) -->
+    <g transform="translate(6,38.70)" stroke="#ffffff" stroke-opacity="0.84" fill="none" stroke-width="0.32" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="0.22" y="0.55" width="2.46" height="1.62" rx="0.22"/>
+      <path d="M0.34 0.78 1.45 1.46 2.56 0.78"/>
+    </g>
+    <text x="10.65" y="40.9" fill="#ffffff" font-size="3.05" font-weight="320" opacity="0.88" letter-spacing="0.01"
+      font-family="Avenir Next, Segoe UI, Arial, sans-serif">aleksandra@andryka.eu</text>
+  </g>
+
+  <!-- QR placeholder -->
+  <g>
+    <rect x="65" y="14.5" width="21" height="21" rx="2.2" fill="#ffffff" opacity="0.985"/>
+    <rect x="66.2" y="15.7" width="18.6" height="18.6" rx="1.5" fill="none" stroke="#154a37" stroke-width="0.55" opacity="0.85"/>
+    <!-- finder-like corners -->
+    <rect x="67.2" y="16.7" width="4.2" height="4.2" rx="0.55" fill="none" stroke="#154a37" stroke-width="0.65"/>
+    <rect x="68.0" y="17.5" width="2.6" height="2.6" rx="0.35" fill="#154a37"/>
+    <rect x="79.4" y="16.7" width="4.2" height="4.2" rx="0.55" fill="none" stroke="#154a37" stroke-width="0.65"/>
+    <rect x="80.2" y="17.5" width="2.6" height="2.6" rx="0.35" fill="#154a37"/>
+    <rect x="67.2" y="28.9" width="4.2" height="4.2" rx="0.55" fill="none" stroke="#154a37" stroke-width="0.65"/>
+    <rect x="68.0" y="29.7" width="2.6" height="2.6" rx="0.35" fill="#154a37"/>
+    <!-- decorative dummy modules -->
+    <g fill="#154a37" opacity="0.92">
+      <rect x="73.5" y="22.2" width="1.0" height="1.0" rx="0.12"/>
+      <rect x="75.0" y="22.2" width="1.0" height="1.0" rx="0.12"/>
+      <rect x="76.5" y="22.2" width="1.0" height="1.0" rx="0.12"/>
+      <rect x="73.5" y="23.7" width="1.0" height="1.0" rx="0.12"/>
+      <rect x="76.5" y="23.7" width="1.0" height="1.0" rx="0.12"/>
+      <rect x="74.2" y="25.0" width="1.0" height="1.0" rx="0.12"/>
+      <rect x="75.7" y="25.0" width="1.0" height="1.0" rx="0.12"/>
+      <rect x="73.5" y="26.3" width="1.0" height="1.0" rx="0.12"/>
+      <rect x="75.0" y="26.3" width="1.0" height="1.0" rx="0.12"/>
+      <rect x="77.8" y="23.9" width="1.0" height="1.0" rx="0.12"/>
+      <rect x="79.2" y="22.5" width="1.0" height="1.0" rx="0.12"/>
+      <rect x="79.2" y="25.3" width="1.0" height="1.0" rx="0.12"/>
+      <rect x="80.6" y="23.9" width="1.0" height="1.0" rx="0.12"/>
+      <rect x="77.8" y="27.0" width="1.0" height="1.0" rx="0.12"/>
+      <rect x="79.2" y="28.4" width="1.0" height="1.0" rx="0.12"/>
+      <rect x="80.6" y="27.0" width="1.0" height="1.0" rx="0.12"/>
+    </g>
+  </g>
+</svg>
