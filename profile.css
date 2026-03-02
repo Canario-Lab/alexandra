@@ -319,6 +319,17 @@ h2 {
   font-size: 1.03rem;
 }
 
+.company-logo {
+  display: block;
+  margin-top: 10px;
+  width: min(230px, 100%);
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: #fff;
+  padding: 6px;
+}
+
 .meta {
   margin: 4px 0 8px;
   color: var(--muted);
