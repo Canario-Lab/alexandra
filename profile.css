@@ -317,6 +317,41 @@ li {
   margin: 0;
 }
 
+.showcase-copy .linkedin-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid #8ea8cb;
+  background: #f9fcff;
+  color: #113564;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(16, 44, 84, 0.14);
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.showcase-copy .linkedin-cta:hover {
+  background: #edf3fb;
+  border-color: #7394bf;
+  transform: translateY(-1px);
+}
+
+.showcase-copy .linkedin-cta-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  background: #0a66c2;
+  color: #fff;
+  display: inline-grid;
+  place-items: center;
+  font-size: 0.85rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
 footer {
   text-align: center;
   font-size: 0.84rem;
