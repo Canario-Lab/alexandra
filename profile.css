@@ -152,6 +152,12 @@ body {
   opacity: 0.93;
 }
 
+.hero .summary-justified {
+  display: block;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .contact-row {
   display: flex;
   flex-wrap: wrap;
