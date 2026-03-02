@@ -422,12 +422,11 @@ li {
 .profile-shot {
   display: block;
   width: calc(100% + 48px);
-  margin: 0 -24px -24px;
+  margin: -24px -24px -24px;
   max-width: none;
   height: 360px;
   object-fit: cover;
   object-position: center 18%;
-  border-top: 1px solid var(--line);
 }
 
 .kpi {
