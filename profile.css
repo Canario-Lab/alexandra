@@ -86,6 +86,14 @@ body {
   max-width: 760px;
 }
 
+.subpage-hero .contact-row {
+  margin-top: 18px;
+}
+
+.subpage-hero .linkedin-cta {
+  margin-top: 14px;
+}
+
 .subpage-grid {
   grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
 }
